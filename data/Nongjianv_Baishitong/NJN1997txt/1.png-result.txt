@@ -1,0 +1,71 @@
+=====Input Params=====
+numThread(8),padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Init Models=====
+--- Init DbNet ---
+--- Init AngleNet ---
+--- Init CrnnNet ---
+Init Models Success!
+=====Start detect=====
+ScaleParam(sw:3970,sh:2815,dw:1120,dh:768,0.282116,0.272824)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(299.300300ms)
+TextBox[0](+padding)[score(0.694278),[x: 3253, y: 179], [x: 3530, y: 190], [x: 3526, y: 249], [x: 3250, y: 238]]
+TextBox[1](+padding)[score(0.753800),[x: 3307, y: 282], [x: 3505, y: 282], [x: 3505, y: 340], [x: 3307, y: 340]]
+TextBox[2](+padding)[score(0.765988),[x: 2038, y: 117], [x: 3282, y: 117], [x: 3282, y: 762], [x: 2038, y: 762]]
+TextBox[3](+padding)[score(0.779772),[x: 3307, y: 370], [x: 3573, y: 370], [x: 3573, y: 428], [x: 3307, y: 428]]
+TextBox[4](+padding)[score(0.775593),[x: 3303, y: 469], [x: 3679, y: 469], [x: 3679, y: 524], [x: 3303, y: 524]]
+TextBox[5](+padding)[score(0.796442),[x: 3243, y: 560], [x: 3796, y: 560], [x: 3796, y: 685], [x: 3243, y: 685]]
+TextBox[6](+padding)[score(0.656094),[x: 2133, y: 762], [x: 2676, y: 751], [x: 2679, y: 817], [x: 2137, y: 828]]
+TextBox[7](+padding)[score(0.695366),[x: 3697, y: 1260], [x: 3775, y: 1264], [x: 3757, y: 1620], [x: 3679, y: 1616]]
+TextBox[8](+padding)[score(0.730048),[x: 2693, y: 2668], [x: 2931, y: 2668], [x: 2931, y: 2727], [x: 2693, y: 2727]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.746037), time(2.186100ms)]
+angle[1][index(1), score(0.999967), time(1.670100ms)]
+angle[2][index(1), score(0.776656), time(1.623400ms)]
+angle[3][index(1), score(1.000000), time(1.620800ms)]
+angle[4][index(1), score(1.000000), time(1.677800ms)]
+angle[5][index(1), score(0.999853), time(1.606200ms)]
+angle[6][index(1), score(0.994166), time(1.647300ms)]
+angle[7][index(1), score(0.999817), time(1.606400ms)]
+angle[8][index(1), score(0.999719), time(1.640200ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](中国妇安报样中动)
+textScores[0]{0.316517 ,0.950128 ,0.637323 ,0.186415 ,0.349307 ,0.463008 ,0.304055 ,0.274153}
+crnnTime[0](7.809500ms)
+textLine[1](神奇的EM)
+textScores[1]{0.999567 ,0.979979 ,0.999994 ,0.999713 ,0.99992}
+crnnTime[1](6.448200ms)
+textLine[2](心费灯)
+textScores[2]{0.2682 ,0.508603 ,0.243313}
+crnnTime[2](3.776000ms)
+textLine[3](法律离你有多远)
+textScores[3]{0.998239 ,0.993716 ,0.996996 ,0.999964 ,0.999998 ,0.999802 ,0.946748}
+crnnTime[3](7.542300ms)
+textLine[4](打工妹为自己设计未来)
+textScores[4]{0.999991 ,0.999992 ,0.958108 ,0.999822 ,0.999953 ,0.998334 ,0.999504 ,0.999909 ,0.996625 ,0.999676}
+crnnTime[4](9.761300ms)
+textLine[5](7溪)
+textScores[5]{0.294542 ,0.12951}
+crnnTime[5](6.394600ms)
+textLine[6](ALWOMEN KNOWING AL)
+textScores[6]{0.999926 ,0.986113 ,0.999153 ,0.987387 ,0.905978 ,0.999962 ,0.996522 ,0.581012 ,0.999703 ,0.999425 ,0.992315 ,0.999783 ,0.994279 ,0.999501 ,0.999973 ,0.682076 ,0.999932 ,0.889659}
+crnnTime[6](10.920500ms)
+textLine[7](产月用)
+textScores[7]{0.531134 ,0.311388 ,0.147948}
+crnnTime[7](6.294900ms)
+textLine[8](每月5B出版)
+textScores[8]{0.983175 ,0.977264 ,0.498372 ,0.59918 ,0.99974 ,0.920643}
+crnnTime[8](5.830800ms)
+=====End detect=====
+FullDetectTime(503.961900ms)
+中国妇安报样中动
+神奇的EM
+心费灯
+法律离你有多远
+打工妹为自己设计未来
+7溪
+ALWOMEN KNOWING AL
+产月用
+每月5B出版
+
