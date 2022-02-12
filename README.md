@@ -39,9 +39,9 @@ a simple python script to see the word frequency of texts, to apply it, see [her
 Distant reading is conducted by machine, different from manually close reading.
 >>>Distant Reading ist ein Ansatz aus den digitalen Literaturwissenschaften, bei dem computationelle Verfahren auf häufig große Mengen an Textdaten angewandt werden, ohne dass die Texte selber gelesen werden. [fortext.net](https://fortext.net/ueber-fortext/glossar/distant-reading#:~:text=Distant%20Reading%20ist%20ein%20Ansatz,die%20Texte%20selber%20gelesen%20werden.&text=Als%20Gegenbegriff%20zu%20Close%20Reading,Franco%20Moretti%20(2000)%20gepr%C3%A4gt.)
 >>>
-
-
-
+     
+     
+    
 #### An example of Word frequency
 <a name="4.1"></a>
 Let's start with a simplest word frequency test!
