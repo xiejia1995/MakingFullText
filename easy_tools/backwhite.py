@@ -1,3 +1,5 @@
+#此脚本能将图片转换为黑白，并适当增强颜色及对比度
+
 from PIL import Image, ImageEnhance
 
 def Chuli(InputPath, OutputPath):

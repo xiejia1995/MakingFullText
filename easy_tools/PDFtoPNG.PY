@@ -1,3 +1,5 @@
+#此脚本能将PDF转化为PNG图像
+
 import fitz
 
 '''
@@ -23,4 +25,4 @@ def pdf_image(pdfPath,imgPath,zoom_x,zoom_y,rotation_angle):
         print (imgPath+str(pg)+"DONE")
     pdf.close()
    
-pdf_image(r"C:/Users/j2x/Documents/GitHub/XJTools/PDF/njn_repaired.pdf",r"C:/Users/j2x/Documents/GitHub/XJTools/PDF/NJN1997/",5,5,0)
+pdf_image(r"C:/Documents/NJN.pdf",r"C:/Documents/NJN.pdf",5,5,0)
