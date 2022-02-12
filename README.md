@@ -46,9 +46,9 @@ Distant reading is conducted by machine, different from manually close reading.
 >>>
      
      
-    
+<a name="wf"></a>   
 #### An example of Word frequency
-<a name="wf"></a>
+
 Let's start with a simplest word frequency test!
 
 This is an example of how we check the words appear most times in Nongjianübaishitong (农家女百事通) 1997.
@@ -81,6 +81,9 @@ in seconds, we get this:
 农民          336  
 技术          328  
 ```  
+
+Since the word "孩子" appears more than 750 times, we can guess that it is indeed an important topic. 
+
 
 Thanks to the wordcloud, we can visualise this result and generate the image below for use in our presentations.
 
