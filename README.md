@@ -1,7 +1,7 @@
 # MakingFullText
 
 
-This project aims at hepling humanity scholars to produce our own full-text data.
+This project aims at hepling humanity scholars to produce and share our own full-text data.
 
 ---
 
@@ -18,7 +18,7 @@ This project aims at hepling humanity scholars to produce our own full-text data
 ## OCR tools
 For academic use, we should avoid relying too much on commercial ones, but to choose open-source tools. Currently, the prevalent Chinese OCR projects are [ChineseOCR_Lite](https://github.com/DayBreak-u/chineseocr_lite), [ChineseOCR](https://github.com/chineseocr/chineseocr), and [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
 
-ChineseOCR is written in C++, while PaddleOCR is python. PaddleOCR works also for multiple languages.
+ChineseOCR is written in C++, while PaddleOCR is python. PaddleOCR supports recognizing multiple languages.
 
 An excellent OCR tool for periodicals should do well in two functions:
 1. Detecting the text area
