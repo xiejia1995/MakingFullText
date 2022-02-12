@@ -53,7 +53,7 @@ Let's start with a simplest word frequency test!
 
 This is an example of how we check the words appear most times in Nongjianübaishitong (农家女百事通) 1997.
 
-To prepare, we should install a python 3.6/3.8/3.9/3.10, and run
+To prepare, we should install a [python](https://www.python.org/) 3.x (e.g. 3.8), and run
 ```shell
 pip install jieba wordcloud
 ```
