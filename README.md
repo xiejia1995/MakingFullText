@@ -58,7 +58,7 @@ in the word_frequency folder, there are
 
 run the [RunWordFreq_NJN1997.py](https://github.com/xiejia1995/MakingFullText/blob/main/word_frequency/RunWordFreq_NJN1997.py)
 
-in seconds, we get this 
+in seconds, we get this   
 自己          956  
 孩子          752  
 生活          684  
