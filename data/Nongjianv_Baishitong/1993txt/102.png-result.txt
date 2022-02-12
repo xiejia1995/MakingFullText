@@ -1,0 +1,173 @@
+=====Input Params=====
+numThread(8),padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Init Models=====
+--- Init DbNet ---
+--- Init AngleNet ---
+--- Init CrnnNet ---
+Init Models Success!
+=====Start detect=====
+ScaleParam(sw:4120,sh:2780,dw:1120,dh:736,0.271845,0.264748)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(281.438400ms)
+TextBox[0](+padding)[score(0.838373),[x: 2093, y: 90], [x: 3855, y: 79], [x: 3858, y: 661], [x: 2096, y: 672]]
+TextBox[1](+padding)[score(0.824850),[x: 423, y: 332], [x: 1107, y: 290], [x: 1114, y: 430], [x: 430, y: 472]]
+TextBox[2](+padding)[score(0.810176),[x: 3237, y: 623], [x: 3781, y: 611], [x: 3785, y: 755], [x: 3240, y: 766]]
+TextBox[3](+padding)[score(0.803395),[x: 625, y: 1446], [x: 2071, y: 1363], [x: 2082, y: 1559], [x: 636, y: 1643]]
+TextBox[4](+padding)[score(0.605856),[x: 217, y: 1582], [x: 342, y: 1571], [x: 349, y: 1665], [x: 224, y: 1677]]
+TextBox[5](+padding)[score(0.687431),[x: 224, y: 1703], [x: 353, y: 1714], [x: 345, y: 1794], [x: 217, y: 1782]]
+TextBox[6](+padding)[score(0.696401),[x: 231, y: 1756], [x: 338, y: 1786], [x: 316, y: 1854], [x: 213, y: 1824]]
+TextBox[7](+padding)[score(0.695254),[x: 224, y: 1839], [x: 345, y: 1839], [x: 345, y: 1903], [x: 224, y: 1903]]
+TextBox[8](+padding)[score(0.688121),[x: 224, y: 1899], [x: 345, y: 1899], [x: 345, y: 1964], [x: 224, y: 1964]]
+TextBox[9](+padding)[score(0.753212),[x: 1901, y: 1937], [x: 2177, y: 1918], [x: 2181, y: 1979], [x: 1905, y: 1998]]
+TextBox[10](+padding)[score(0.676962),[x: 217, y: 1956], [x: 356, y: 1956], [x: 356, y: 2028], [x: 217, y: 2028]]
+TextBox[11](+padding)[score(0.758727),[x: 1820, y: 2020], [x: 2174, y: 1994], [x: 2177, y: 2054], [x: 1824, y: 2081]]
+TextBox[12](+padding)[score(0.670247),[x: 2442, y: 2009], [x: 3031, y: 1990], [x: 3034, y: 2081], [x: 2446, y: 2100]]
+TextBox[13](+padding)[score(0.631221),[x: 217, y: 2013], [x: 345, y: 2013], [x: 345, y: 2088], [x: 217, y: 2088]]
+TextBox[14](+padding)[score(0.749510),[x: 1820, y: 2088], [x: 2192, y: 2062], [x: 2196, y: 2130], [x: 1824, y: 2156]]
+TextBox[15](+padding)[score(0.664752),[x: 217, y: 2077], [x: 320, y: 2077], [x: 320, y: 2141], [x: 217, y: 2141]]
+TextBox[16](+padding)[score(0.604564),[x: 2354, y: 2111], [x: 3130, y: 2088], [x: 3134, y: 2205], [x: 2357, y: 2228]]
+TextBox[17](+padding)[score(0.666267),[x: 209, y: 2126], [x: 353, y: 2145], [x: 345, y: 2217], [x: 202, y: 2198]]
+TextBox[18](+padding)[score(0.755904),[x: 1831, y: 2164], [x: 2174, y: 2141], [x: 2177, y: 2202], [x: 1835, y: 2224]]
+TextBox[19](+padding)[score(0.730665),[x: 217, y: 2209], [x: 345, y: 2209], [x: 345, y: 2258], [x: 217, y: 2258]]
+TextBox[20](+padding)[score(0.741388),[x: 1828, y: 2236], [x: 2192, y: 2209], [x: 2196, y: 2277], [x: 1831, y: 2304]]
+TextBox[21](+padding)[score(0.624231),[x: 2567, y: 2213], [x: 3255, y: 2224], [x: 3251, y: 2330], [x: 2563, y: 2319]]
+TextBox[22](+padding)[score(0.766730),[x: 1835, y: 2311], [x: 2093, y: 2288], [x: 2096, y: 2356], [x: 1839, y: 2379]]
+TextBox[23](+padding)[score(0.720506),[x: 2773, y: 2440], [x: 3524, y: 2428], [x: 3527, y: 2523], [x: 2777, y: 2534]]
+TextBox[24](+padding)[score(0.641192),[x: 3292, y: 2545], [x: 3700, y: 2530], [x: 3704, y: 2625], [x: 3296, y: 2640]]
+TextBox[25](+padding)[score(0.754262),[x: 790, y: 2606], [x: 1993, y: 2538], [x: 1997, y: 2632], [x: 794, y: 2700]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999186), time(2.199500ms)]
+angle[1][index(1), score(1.000000), time(1.724000ms)]
+angle[2][index(1), score(0.729062), time(1.687200ms)]
+angle[3][index(1), score(0.999994), time(1.701900ms)]
+angle[4][index(1), score(0.503833), time(1.632500ms)]
+angle[5][index(1), score(0.982272), time(1.635200ms)]
+angle[6][index(1), score(0.717929), time(1.706400ms)]
+angle[7][index(1), score(0.999817), time(1.671300ms)]
+angle[8][index(1), score(0.999839), time(1.705200ms)]
+angle[9][index(1), score(0.986460), time(1.720500ms)]
+angle[10][index(1), score(0.736844), time(1.644500ms)]
+angle[11][index(1), score(1.000000), time(1.652000ms)]
+angle[12][index(1), score(1.000000), time(1.675500ms)]
+angle[13][index(1), score(0.992708), time(1.638200ms)]
+angle[14][index(1), score(1.000000), time(1.688800ms)]
+angle[15][index(1), score(0.999983), time(1.700700ms)]
+angle[16][index(1), score(0.957748), time(1.692800ms)]
+angle[17][index(1), score(0.894051), time(1.696800ms)]
+angle[18][index(1), score(1.000000), time(1.682700ms)]
+angle[19][index(1), score(1.000000), time(1.669500ms)]
+angle[20][index(1), score(0.999998), time(1.704800ms)]
+angle[21][index(1), score(0.999949), time(1.676000ms)]
+angle[22][index(1), score(0.999780), time(1.649900ms)]
+angle[23][index(1), score(0.999997), time(1.685700ms)]
+angle[24][index(1), score(0.999974), time(1.681800ms)]
+angle[25][index(1), score(1.000000), time(1.742500ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](水家汉)
+textScores[0]{0.135196 ,0.259368 ,0.100777}
+crnnTime[0](5.465800ms)
+textLine[1](请不用怀疑)
+textScores[1]{0.997371 ,0.995968 ,0.999972 ,0.999727 ,0.981254}
+crnnTime[1](7.589400ms)
+textLine[2](西通)
+textScores[2]{0.405341 ,0.0846427}
+crnnTime[2](5.954700ms)
+textLine[3](滋肾宁神丸为您助威)
+textScores[3]{0.93789 ,0.74819 ,0.894478 ,0.984549 ,0.82723 ,0.999952 ,0.970829 ,0.998736 ,0.997117}
+crnnTime[3](10.109000ms)
+textLine[4](分国)
+textScores[4]{0.423079 ,0.34782}
+crnnTime[4](3.087600ms)
+textLine[5](所以)
+textScores[5]{0.945443 ,0.970964}
+crnnTime[5](4.638800ms)
+textLine[6](引雅)
+textScores[6]{0.286409 ,0.195404}
+crnnTime[6](4.369900ms)
+textLine[7](住是。)
+textScores[7]{0.998896 ,0.999818 ,0.584312}
+crnnTime[7](4.813400ms)
+textLine[8](来都是)
+textScores[8]{0.999859 ,0.999977 ,0.325245}
+crnnTime[8](4.954400ms)
+textLine[9](纯中药制剂法)
+textScores[9]{0.999814 ,0.99996 ,0.999703 ,0.999853 ,0.906755 ,0.203012}
+crnnTime[9](7.736200ms)
+textLine[10](活上的)
+textScores[10]{0.908905 ,0.999976 ,0.250413}
+crnnTime[10](3.563900ms)
+textLine[11](神丸主治肝肾功)
+textScores[11]{0.999988 ,0.999858 ,0.999825 ,0.999114 ,0.992382 ,0.881235 ,0.991009}
+crnnTime[11](8.390300ms)
+textLine[12](惊大姐致信本刊)
+textScores[12]{0.765633 ,0.99237 ,0.999126 ,0.942674 ,0.986785 ,0.975235 ,0.889443}
+crnnTime[12](8.811900ms)
+textLine[13](子上)
+textScores[13]{0.997162 ,0.999535}
+crnnTime[13](3.740900ms)
+textLine[14](损,腰酸遗泄,头)
+textScores[14]{0.990122 ,0.786217 ,0.981611 ,0.999348 ,0.763748 ,0.961652 ,0.839631 ,0.833866}
+crnnTime[14](7.689000ms)
+textLine[15](天上)
+textScores[15]{0.999315 ,0.999939}
+crnnTime[15](3.370300ms)
+textLine[16](小保姆豪店泰动京城)
+textScores[16]{0.988757 ,0.999746 ,0.99058 ,0.748943 ,0.109081 ,0.427444 ,0.995797 ,0.826476 ,0.997618}
+crnnTime[16](9.008900ms)
+textLine[17](猪限斗)
+textScores[17]{0.999284 ,0.778945 ,0.845307}
+crnnTime[17](3.684100ms)
+textLine[18](鸣,失眠多梦诺症)
+textScores[18]{0.980741 ,0.866754 ,0.967364 ,0.9997 ,0.979343 ,0.923376 ,0.698715 ,0.9878}
+crnnTime[18](7.773200ms)
+textLine[19](人做伍)
+textScores[19]{0.998807 ,0.999756 ,0.830895}
+crnnTime[19](4.810400ms)
+textLine[20](滋肾宁神丸为您飘)
+textScores[20]{0.843852 ,0.456269 ,0.999662 ,0.998818 ,0.98931 ,0.999516 ,0.992612 ,0.100784}
+crnnTime[20](7.597600ms)
+textLine[21](山沟定出时装步人)
+textScores[21]{0.981002 ,0.547836 ,0.572038 ,0.676234 ,0.98536 ,0.976109 ,0.348887 ,0.546771}
+crnnTime[21](8.798600ms)
+textLine[22](活增添温馨)
+textScores[22]{0.997496 ,0.956563 ,0.87741 ,0.966886 ,0.967058}
+crnnTime[22](5.658600ms)
+textLine[23](对次学的孩子怎么办)
+textScores[23]{0.999878 ,0.585406 ,0.975894 ,0.99997 ,0.999986 ,0.999886 ,0.999925 ,0.999992 ,0.999964}
+crnnTime[23](11.038600ms)
+textLine[24](我想认识你)
+textScores[24]{0.295057 ,0.989897 ,0.999791 ,0.999881 ,0.982448}
+crnnTime[24](6.401400ms)
+textLine[25](广东省潮州市宏兴制药厂独家生产)
+textScores[25]{0.99998 ,0.999996 ,0.999731 ,0.99136 ,0.999958 ,0.999997 ,0.999745 ,0.999826 ,0.999933 ,0.999993 ,0.999454 ,0.996463 ,0.966819 ,0.928557 ,0.999909}
+crnnTime[25](16.289900ms)
+=====End detect=====
+FullDetectTime(783.547400ms)
+水家汉
+请不用怀疑
+西通
+滋肾宁神丸为您助威
+分国
+所以
+引雅
+住是。
+来都是
+纯中药制剂法
+活上的
+神丸主治肝肾功
+惊大姐致信本刊
+子上
+损,腰酸遗泄,头
+天上
+小保姆豪店泰动京城
+猪限斗
+鸣,失眠多梦诺症
+人做伍
+滋肾宁神丸为您飘
+山沟定出时装步人
+活增添温馨
+对次学的孩子怎么办
+我想认识你
+广东省潮州市宏兴制药厂独家生产
+

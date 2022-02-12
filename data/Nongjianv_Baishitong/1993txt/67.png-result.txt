@@ -1,0 +1,71 @@
+=====Input Params=====
+numThread(8),padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Init Models=====
+--- Init DbNet ---
+--- Init AngleNet ---
+--- Init CrnnNet ---
+Init Models Success!
+=====Start detect=====
+ScaleParam(sw:9100,sh:6485,dw:1120,dh:800,0.123077,0.123362)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(325.104000ms)
+TextBox[0](+padding)[score(0.815216),[x: 3331, y: 2561], [x: 4062, y: 2472], [x: 4095, y: 2756], [x: 3363, y: 2845]]
+TextBox[1](+padding)[score(0.862512),[x: 4070, y: 2407], [x: 5817, y: 2407], [x: 5817, y: 2966], [x: 4070, y: 2966]]
+TextBox[2](+padding)[score(0.738076),[x: 3355, y: 2812], [x: 4021, y: 2748], [x: 4038, y: 2893], [x: 3371, y: 2958]]
+TextBox[3](+padding)[score(0.713166),[x: 3445, y: 2926], [x: 4030, y: 2877], [x: 4038, y: 3023], [x: 3453, y: 3072]]
+TextBox[4](+padding)[score(0.765423),[x: 5159, y: 2910], [x: 5760, y: 2877], [x: 5768, y: 3056], [x: 5167, y: 3088]]
+TextBox[5](+padding)[score(0.713187),[x: 4330, y: 4466], [x: 4704, y: 4466], [x: 4704, y: 4563], [x: 4330, y: 4563]]
+TextBox[6](+padding)[score(0.761677),[x: 4314, y: 4758], [x: 4996, y: 4734], [x: 5005, y: 4855], [x: 4322, y: 4879]]
+TextBox[7](+padding)[score(0.673597),[x: 4338, y: 4871], [x: 4842, y: 4871], [x: 4842, y: 4969], [x: 4338, y: 4969]]
+TextBox[8](+padding)[score(0.659271),[x: 4322, y: 4961], [x: 5118, y: 4920], [x: 5126, y: 5042], [x: 4330, y: 5082]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.999990), time(2.158100ms)]
+angle[1][index(1), score(0.913886), time(1.683300ms)]
+angle[2][index(1), score(0.999995), time(1.691500ms)]
+angle[3][index(1), score(1.000000), time(1.664900ms)]
+angle[4][index(1), score(0.982393), time(1.609500ms)]
+angle[5][index(1), score(1.000000), time(1.645600ms)]
+angle[6][index(1), score(0.999999), time(1.129000ms)]
+angle[7][index(1), score(0.999814), time(1.094800ms)]
+angle[8][index(1), score(0.999392), time(1.100200ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](洁尔阴)
+textScores[0]{0.997998 ,0.999927 ,0.531266}
+crnnTime[0](5.649200ms)
+textLine[1](原东收)
+textScores[1]{0.132139 ,0.793957 ,0.35699}
+crnnTime[1](5.620500ms)
+textLine[2](妇科杂症皮肤病)
+textScores[2]{0.966739 ,0.974767 ,0.860668 ,0.995246 ,0.987296 ,0.998981 ,0.961542}
+crnnTime[2](7.191500ms)
+textLine[3](器官疾病克星)
+textScores[3]{0.880521 ,0.996687 ,0.992911 ,0.998181 ,0.998992 ,0.991836}
+crnnTime[3](6.397800ms)
+textLine[4](百非通)
+textScores[4]{0.727432 ,0.448922 ,0.694451}
+crnnTime[4](5.143600ms)
+textLine[5](今年种什么)
+textScores[5]{0.999237 ,1 ,0.999997 ,0.999983 ,0.998925}
+crnnTime[5](6.132300ms)
+textLine[6](旧情书被变子发现后)
+textScores[6]{0.989053 ,0.896968 ,0.99299 ,0.964638 ,0.446001 ,0.999719 ,0.982925 ,0.960069 ,0.999323}
+crnnTime[6](8.093400ms)
+textLine[7](换个活法回家去)
+textScores[7]{0.901491 ,0.999986 ,0.99942 ,0.999949 ,0.999992 ,0.999998 ,0.999277}
+crnnTime[7](7.699700ms)
+textLine[8](银屏下的"周华"与"方波)
+textScores[8]{0.907103 ,0.991237 ,0.99999 ,0.999996 ,0.998517 ,0.92728 ,0.73496 ,0.993043 ,0.998439 ,0.992055 ,0.891357 ,0.3328}
+crnnTime[8](9.150200ms)
+=====End detect=====
+FullDetectTime(957.345500ms)
+洁尔阴
+原东收
+妇科杂症皮肤病
+器官疾病克星
+百非通
+今年种什么
+旧情书被变子发现后
+换个活法回家去
+银屏下的"周华"与"方波
+

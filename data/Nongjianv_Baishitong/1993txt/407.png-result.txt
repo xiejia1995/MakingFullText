@@ -1,0 +1,29 @@
+=====Input Params=====
+numThread(8),padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Init Models=====
+--- Init DbNet ---
+--- Init AngleNet ---
+--- Init CrnnNet ---
+Init Models Success!
+=====Start detect=====
+ScaleParam(sw:3975,sh:2770,dw:1120,dh:768,0.281761,0.277256)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(310.239100ms)
+TextBox[0](+padding)[score(0.812216),[x: 1132, y: 281], [x: 1714, y: 252], [x: 1717, y: 342], [x: 1135, y: 371]]
+TextBox[1](+padding)[score(0.707759),[x: 1394, y: 2654], [x: 1668, y: 2643], [x: 1671, y: 2712], [x: 1398, y: 2723]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.998464), time(1.537000ms)]
+angle[1][index(1), score(0.999995), time(1.132200ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](艾系的碗里有了内)
+textScores[0]{0.619275 ,0.365612 ,0.754461 ,0.39296 ,0.853393 ,0.99956 ,0.996985 ,0.891698}
+crnnTime[0](10.109400ms)
+textLine[1](王复羊作)
+textScores[1]{0.996309 ,0.993576 ,0.982974 ,0.999426}
+crnnTime[1](6.516400ms)
+=====End detect=====
+FullDetectTime(350.490900ms)
+艾系的碗里有了内
+王复羊作
+

@@ -1,0 +1,71 @@
+=====Input Params=====
+numThread(8),padding(50),maxSideLen(1024),boxScoreThresh(0.600000),boxThresh(0.300000),unClipRatio(2.000000),doAngle(1),mostAngle(1)
+=====Init Models=====
+--- Init DbNet ---
+--- Init AngleNet ---
+--- Init CrnnNet ---
+Init Models Success!
+=====Start detect=====
+ScaleParam(sw:2090,sh:2780,dw:832,dh:1120,0.398086,0.402878)
+---------- step: dbNet getTextBoxes ----------
+dbNetTime(355.390100ms)
+TextBox[0](+padding)[score(0.705655),[x: 0, y: 2], [x: 1816, y: 9], [x: 1813, y: 690], [x: 0, y: 682]]
+TextBox[1](+padding)[score(0.825905),[x: 1145, y: 565], [x: 1710, y: 565], [x: 1710, y: 737], [x: 1145, y: 737]]
+TextBox[2](+padding)[score(0.795786),[x: 268, y: 2025], [x: 768, y: 2013], [x: 771, y: 2082], [x: 271, y: 2094]]
+TextBox[3](+padding)[score(0.789442),[x: 278, y: 2119], [x: 643, y: 2119], [x: 643, y: 2196], [x: 278, y: 2196]]
+TextBox[4](+padding)[score(0.772953),[x: 256, y: 2211], [x: 994, y: 2196], [x: 997, y: 2288], [x: 258, y: 2303]]
+TextBox[5](+padding)[score(0.695165),[x: 276, y: 2315], [x: 565, y: 2315], [x: 565, y: 2400], [x: 276, y: 2400]]
+TextBox[6](+padding)[score(0.795463),[x: 271, y: 2412], [x: 929, y: 2400], [x: 931, y: 2484], [x: 273, y: 2497]]
+TextBox[7](+padding)[score(0.799403),[x: 268, y: 2516], [x: 788, y: 2509], [x: 791, y: 2586], [x: 271, y: 2593]]
+TextBox[8](+padding)[score(0.815531),[x: 276, y: 2613], [x: 1037, y: 2601], [x: 1039, y: 2685], [x: 278, y: 2698]]
+---------- step: drawTextBoxes ----------
+---------- step: angleNet getAngles ----------
+angle[0][index(1), score(0.926292), time(1.705200ms)]
+angle[1][index(1), score(0.998911), time(1.148400ms)]
+angle[2][index(1), score(1.000000), time(1.249400ms)]
+angle[3][index(1), score(1.000000), time(1.111400ms)]
+angle[4][index(1), score(1.000000), time(1.124600ms)]
+angle[5][index(1), score(0.996727), time(1.109300ms)]
+angle[6][index(1), score(1.000000), time(1.123600ms)]
+angle[7][index(1), score(1.000000), time(1.113300ms)]
+angle[8][index(1), score(1.000000), time(1.197600ms)]
+---------- step: crnnNet getTextLine ----------
+textLine[0](欧)
+textScores[0]{0.2592}
+crnnTime[0](5.068200ms)
+textLine[1](百韦趣)
+textScores[1]{0.891025 ,0.410331 ,0.200678}
+crnnTime[1](6.341300ms)
+textLine[2](卖粮难难有哪儿)
+textScores[2]{0.999512 ,0.999498 ,0.999022 ,0.997384 ,0.49041 ,0.999904 ,0.532959}
+crnnTime[2](10.039700ms)
+textLine[3](今年种什么)
+textScores[3]{0.999694 ,0.999886 ,0.999994 ,0.999997 ,0.999993}
+crnnTime[3](7.634500ms)
+textLine[4](江总书记的故乡与家世)
+textScores[4]{0.999815 ,0.999894 ,0.999984 ,0.99999 ,1 ,0.999573 ,0.999986 ,0.999933 ,0.999816 ,0.99997}
+crnnTime[4](10.920200ms)
+textLine[5](爸爸有茶)
+textScores[5]{0.995187 ,0.999927 ,0.999914 ,0.212652}
+crnnTime[5](5.969900ms)
+textLine[6](旧情书被妻子发现后)
+textScores[6]{0.998678 ,0.99984 ,0.999995 ,0.999667 ,0.999995 ,0.999987 ,0.999983 ,0.99998 ,0.999932}
+crnnTime[6](10.292400ms)
+textLine[7](换个活法回家去)
+textScores[7]{0.978332 ,0.999815 ,0.999666 ,0.999903 ,0.999957 ,0.999793 ,0.999995}
+crnnTime[7](10.258700ms)
+textLine[8](银屏下的"周华"与"方波)
+textScores[8]{0.998813 ,0.999988 ,0.999998 ,0.999994 ,0.975671 ,0.999982 ,0.99975 ,0.970886 ,0.999963 ,0.907993 ,0.997345 ,0.999891}
+crnnTime[8](13.107300ms)
+=====End detect=====
+FullDetectTime(506.516000ms)
+欧
+百韦趣
+卖粮难难有哪儿
+今年种什么
+江总书记的故乡与家世
+爸爸有茶
+旧情书被妻子发现后
+换个活法回家去
+银屏下的"周华"与"方波
+
