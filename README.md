@@ -82,6 +82,8 @@ in seconds, we get this:
 技术          328  
 ```  
 
+Since the word "孩子" appears more than 750 times, we can guess that it is indeed an important topic. 
+
 Thanks to the wordcloud, we can visualise this result and generate the image below for use in our presentations.
 
 <img src="./word_frequency/wordcloudNJN1997_Sample.jpg" align="middle" width = "500"/>
