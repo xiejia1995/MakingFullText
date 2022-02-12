@@ -1,7 +1,7 @@
 # MakingFullText
 
 
-This project aims at hepling humanity scholars to produce and share our own full-text data.
+This project aims at helping humanities scholars to produce and share our own full-text data.
 
 ---
 
@@ -14,6 +14,9 @@ This project aims at hepling humanity scholars to produce and share our own full
 3. Choose proper OCR tools to detect and recognize texts, and save them into txt format.
 
 4. Based on the txt data, we can do a [distant reading](#dr) by means of computer.
+
+## Republican materials
+The workflow for Republican materials is on the way. A test of OCR tools recognizing Republican sample can be seen [here](./docs/OCR_test_Republican_Magazine.md).
 
 ## OCR tools
 For academic use, we should avoid relying too much on commercial ones, but to choose open-source tools. Currently, the prevalent Chinese OCR projects are [ChineseOCR_Lite](https://github.com/DayBreak-u/chineseocr_lite), [ChineseOCR](https://github.com/chineseocr/chineseocr), and [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
@@ -40,9 +43,8 @@ a simple python script to see the word frequency of texts, to apply it, see [her
 <a name="dr"></a>
 ## Distant reading
 
-
-Distant reading is conducted by machine, different from manually close reading.
->Distant Reading ist ein Ansatz aus den digitalen Literaturwissenschaften, bei dem computationelle Verfahren auf häufig große Mengen an Textdaten angewandt werden, ohne dass die Texte selber gelesen werden. [fortext.net](https://fortext.net/ueber-fortext/glossar/distant-reading#:~:text=Distant%20Reading%20ist%20ein%20Ansatz,die%20Texte%20selber%20gelesen%20werden.&text=Als%20Gegenbegriff%20zu%20Close%20Reading,Franco%20Moretti%20(2000)%20gepr%C3%A4gt.)
+#### Definition
+>Distant Reading ist ein Ansatz aus den digitalen Literaturwissenschaften, bei dem computationelle Verfahren auf häufig große Mengen an Textdaten angewandt werden, ohne dass die Texte selber gelesen werden. [(fortext.net)](https://fortext.net/ueber-fortext/glossar/distant-reading#:~:text=Distant%20Reading%20ist%20ein%20Ansatz,die%20Texte%20selber%20gelesen%20werden.&text=Als%20Gegenbegriff%20zu%20Close%20Reading,Franco%20Moretti%20(2000)%20gepr%C3%A4gt.)
 >>>
      
      
@@ -59,9 +61,9 @@ pip install jieba wordcloud
 ```
 to install the dependent modules for running our scripts.
 
-in the word_frequency folder, there are   
+In the word_frequency folder, there are   
 
-"[NJN1997.txt](https://github.com/xiejia1995/MakingFullText/blob/main/word_frequency/NJN1997.txt)" which is the full text of NJNBST 1997;  
+"[NJN1997.txt](https://github.com/xiejia1995/MakingFullText/blob/main/word_frequency/NJN1997.txt)" which is the full text of NJNBST 1997;  and
 
 "[excludes.txt](https://github.com/xiejia1995/MakingFullText/blob/main/word_frequency/excludes.txt)" which contains the words that won't be counted, such as "一个", or "因为".  
 
