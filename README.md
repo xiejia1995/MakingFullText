@@ -41,13 +41,15 @@ Distant reading is conducted by machine, different from manually close reading.
 >>>
 
 #### An example of Word frequency
-
+<a name="4.1"></a>
 Let's start with a simplest word frequency test!
 
 This is an example of how we check the words appear most times in Nongjianübaishitong (农家女百事通) 1997.
 
 To prepare, we should install a python 3.6/3.8/3.9/3.10, and run
-<pip install jieba wordcloud>
+```shell
+pip install jieba wordcloud>
+```
 to install the dependent modules for running our scripts.
 
 in the word_frequency folder, there are 
