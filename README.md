@@ -1,7 +1,7 @@
 # MakingFullText
 
 
-This project aims at hepling humanity scholars to produce our own full-text data.
+This project aims at hepling humanity scholars to produce and share our own full-text data.
 
 ---
 
