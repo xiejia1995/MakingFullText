@@ -25,11 +25,11 @@ Unlike contemporary magazines, Republican ones have the following features:
 ## Run Tests
 As to the testing sample, I choose one page from the local magazine "Fan hou zhong" (飯後鐘) in the 1920s China. It has only texts without images and its reading direction is vertical. The punctuation system is the white and black circles besides characters (see picture).
 
-<img src="./OCRTest/sample.png" align="middle">
+<img src="./OCRTest/sample.png" align="middle" width="300">
 
 To see how the circles affect the OCR process, I manually clear them and save this pic as a sample2:
 
-<img src="./OCRTest/sample2.png" align="middle">
+<img src="./OCRTest/sample2.png" align="middle" width="300">
 
 In the first round, let's have a look at the result of detecting text areas:
 
@@ -38,21 +38,21 @@ In the first round, let's have a look at the result of detecting text areas:
 **Paddle** wrongly reads the direction of texts, see picture:
 <img src="./OCRTest/PaddleOCR-result.jpg" align="middle">
 
-**KindaiOCR** detects most of the texts but is obviously disrupted by the circles:
-<img src="./OCRTest/KindaiOCR-res_or.jpg" align="middle">
+**KindaiOCR** detects most of the texts but is obviously disrupted by the circles:  
+<img src="./OCRTest/KindaiOCR-res_or.jpg" align="middle" width="300">
 
 Given the fact that all three can not detect the text area well, it is meangless to compare the correct rate.
 
 In the round 2, sample2 without circles will be tested.
 
 **ChineseOCR_lite** does very well in detecting the text lines, but the titles on the top and right side are ignored:
-<img src="./OCRTest/ChineseOCR-result.jpg" align="middle">
+<img src="./OCRTest/ChineseOCR-result.jpg" align="middle" width="300">
 
 **Paddle** can only ditect app. 80% of texts, which still needs much improvement:
 <img src="./OCRTest/PaddleOCR-result2.jpg" align="middle">
 
-**KindaiOCR** this time perfectly detects all the texts:
-<img src="./OCRTest/KindaiOCR-res2.jpg" align="middle">
+**KindaiOCR** this time perfectly detects all the texts:  
+<img src="./OCRTest/KindaiOCR-res2.jpg" align="middle" width="300">
 
 However, ChineseOCR_lite does not hold a model for tranditional Chinese yet, people who need this have to train it by themselves. PaddleOCR is still struggling with the detection performance. KindaiOCR's detection is good, but the recognition model is only for Japanese, not very suitable for Chinese. Still, we need to prepare the training.
 
