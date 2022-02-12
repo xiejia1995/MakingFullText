@@ -48,7 +48,7 @@ This is an example of how we check the words appear most times in Nongjianübais
 
 To prepare, we should install a python 3.6/3.8/3.9/3.10, and run
 ```shell
-pip install jieba wordcloud>
+pip install jieba wordcloud
 ```
 to install the dependent modules for running our scripts.
 
