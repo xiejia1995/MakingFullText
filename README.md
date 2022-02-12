@@ -33,7 +33,7 @@ here are some practical python scripts.
 python scripts on using PaddleOCR
 
 #### word_frequency
-a simple python scipt to see the word frequency in a txt, to apply it, see [here]("#4.1")
+a simple python script to see the word frequency of texts, to apply it, see [here]("#4.1")
 
 ## Distant reading
 Distant reading is conducted by machine, different from manually close reading.
