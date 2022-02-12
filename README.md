@@ -33,41 +33,42 @@ here are some practical python scripts.
 python scripts on using PaddleOCR
 
 #### word_frequency
-a simple python scipt to see the word frequency in a txt, to apply it, see [here]("Word frequency")
+a simple python scipt to see the word frequency in a txt, to apply it, see [here](Word frequency)
 
 ## Distant reading
 Distant reading is conducted by machine, different from manually close reading.
 >>>Distant Reading ist ein Ansatz aus den digitalen Literaturwissenschaften, bei dem computationelle Verfahren auf häufig große Mengen an Textdaten angewandt werden, ohne dass die Texte selber gelesen werden. [fortext.net](https://fortext.net/ueber-fortext/glossar/distant-reading#:~:text=Distant%20Reading%20ist%20ein%20Ansatz,die%20Texte%20selber%20gelesen%20werden.&text=Als%20Gegenbegriff%20zu%20Close%20Reading,Franco%20Moretti%20(2000)%20gepr%C3%A4gt.)
 >>>
 
-#### Word frequency
+#### An example of Word frequency
+
 Let's start with a simplest word frequency test!
 
 This is an example of how we check the words appear most times in Nongjianübaishitong (农家女百事通) 1997.
 
-To prepare, we should install a python 3.6/3.8/3.9/3.10, and run
-``pip install jieba wordcloud
-to install the dependent modules for running our scripts.
+   To prepare, we should install a python 3.6/3.8/3.9/3.10, and run
+   <pip install jieba wordcloud>
+   to install the dependent modules for running our scripts.
 
-in the word_frequency folder, there are 
-"NJN1997.txt" which is the full text of NJNBST 1997;
-"excludes.txt" which contains the words that we don't want to be counted, such as "一个", or "因为".
+   in the word_frequency folder, there are 
+   "[NJN1997.txt](https://github.com/xiejia1995/MakingFullText/blob/main/word_frequency/NJN1997.txt)" which is the full text of NJNBST 1997;
+   "[excludes.txt(https://github.com/xiejia1995/MakingFullText/blob/main/word_frequency/excludes.txt)]" which contains the words that we don't want to be counted, such as "一个", or "因为".
 
-run the RunWordFreq_NJN1997.py
+   run the [RunWordFreq_NJN1997.py](https://github.com/xiejia1995/MakingFullText/blob/main/word_frequency/RunWordFreq_NJN1997.py)
 
-in seconds, we get this 
-自己          956
-孩子          752
-生活          684
-农村          544
-妇女          440
-丈夫          388
-公斤          368
-母亲          336
-农民          336
-技术          328
+   in seconds, we get this 
+   自己          956
+   孩子          752
+   生活          684
+   农村          544
+   妇女          440
+   丈夫          388
+   公斤          368
+   母亲          336
+   农民          336
+   技术          328
 
-Thanks to the wordcloud module, we can visualise this result and generate the image below for use in our presentations.
+   Thanks to the wordcloud module, we can visualise this result and generate the image below for use in our presentations.
 
 
 
