@@ -27,19 +27,6 @@ An excellent OCR tool for periodicals should do well in two functions:
 1. Detecting the text area
 2. Recognizing the Chinese characters
 
-## Files in this repo
-#### data
-the full-text data in txt format, recommended path is " \[NAME\]/year/(volume)/page.txt" e.g. Nongjianv_Baishitong/1997/1.txt
-
-#### easy_tools
-here are some practical python scripts.
-
-#### py_paddleocr
-python scripts on using PaddleOCR
-
-#### word_frequency
-a simple python script to see the word frequency of texts, to apply it, see [here](#wf)
-
 <a name="dr"></a>
 ## Distant reading
 
@@ -99,4 +86,21 @@ Thanks to the wordcloud, we can visualise this result and generate the image bel
 <img src="./word_frequency/wordcloudNJN1997_Sample.jpg" align="middle" width = "500"/>
 
 
+
    
+
+## Files in this repo
+#### data
+the full-text data in txt format, recommended path is " \[NAME\]/year/(volume)/page.txt" e.g. Nongjianv_Baishitong/1997/1.txt
+
+### docs
+documents of this project
+
+#### easy_tools
+some practical python scripts.
+
+#### py_paddleocr
+python scripts on using PaddleOCR
+
+#### word_frequency
+a simple python script to see the word frequency of texts, to apply it, see [here](#wf)
