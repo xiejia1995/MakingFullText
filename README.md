@@ -72,19 +72,26 @@ run the [RunWordFreq_NJN1997.py](https://github.com/xiejia1995/MakingFullText/bl
 
 in seconds, we get this:  
 ```shell  
-自己          956  
-孩子          752  
-生活          684  
-农村          544  
-妇女          440  
-丈夫          388  
-公斤          368  
-母亲          336  
-农民          336  
-技术          328  
+自己          256
+孩子          198
+生活          178
+农村          142
+妇女          117
+丈夫           99
+公斤           89
+母亲           88
+现在           82
+技术           82
+希望           81
+父母           80
+农民           80
+老师           75
+问题           71
+工作           69
+...
 ```  
 
-Since the word "孩子" appears more than 750 times, we can guess that it is indeed an important topic. 
+Since the word "孩子" appears more than 190 times, we can guess that it is indeed an important topic. 
 
 
 Thanks to the wordcloud, we can visualise this result and generate the image below for use in our presentations.
