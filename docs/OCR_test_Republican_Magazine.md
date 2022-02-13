@@ -10,11 +10,11 @@ Here are some default qualities of 3 tools:.
 
 
 | Tools | ChineseOCR_lite | PaddleOCR | KindaiOCR |
-
-| language | c++ | python | python |  
+|--|--|--|--|
+| written by | c++ | python | python |  
 | speed | very fast | fast | slow |  
 | reading direction | both | both | vertical |  
-| recognition of language | 简体中文 | multiple languages | Japanese |
+| supporting | 简体中文 | multiple languages | Japanese |
 
 
 ## Difficulty in processing Republican magazines
