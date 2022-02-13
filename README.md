@@ -91,7 +91,7 @@ in seconds, we get this:
 ...
 ```  
 
-Since the word "孩子" appears more than 750 times, we can guess that it is indeed an important topic. 
+Since the word "孩子" appears more than 190 times, we can guess that it is indeed an important topic. 
 
 
 Thanks to the wordcloud, we can visualise this result and generate the image below for use in our presentations.
