@@ -9,11 +9,11 @@ def takeSecond(elem):
 def createWordCloud(text):
     w=wordcloud.WordCloud(font_path="C:/Windows/Fonts/simhei.ttf",width=600,height=400,background_color="white")
     w.generate(text)    
-    w.to_file('word_frequency/wordcloudNJN1997.jpg')
+    w.to_file('wordcloudNJN1997.jpg')
 
 def main():
     path = os.getcwd()
-    txtpath = os.path.join(path,"word_frequency/NJN1997.txt")
+    txtpath = os.path.join(path,"NJN1997.txt")
     file = open(txtpath,"r")
     text=file.read()
     file.close()
@@ -27,7 +27,7 @@ def main():
             rword = word
         counts[rword] = counts.get(rword,0) + 1
 
-    file = open(path + "/word_frequency/excludes.txt","r", encoding='UTF-8')
+    file = open(path + "/excludes.txt","r", encoding='UTF-8')
     excludes =file.read().split(",")
     file.close
 
