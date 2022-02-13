@@ -4,14 +4,17 @@
 Due to many reasons, producing full-text data is not easy for historical documents. Here is a first attempt of this, with several ready-to-use open-source OCR projects.
 
 ## Tested tools
-From GitHub, I choose the two Chinese OCR repos with most followers, namely ChineseOCR_lite and PaddleOCR, which are widely applied to OCR in daily-life and natural scenes; and KindaiOCR project focuses on modern Japanese magazines. All of them are based on neural network. In this test, I use the models they have already trained.
+From GitHub, I choose the two Chinese OCR repos with most followers, namely ChineseOCR_lite and PaddleOCR, which are widely applied to OCR in daily-life and natural scenes; and KindaiOCR project which focuses on modern Japanese magazines. All of them are based on neural network. In this test, I use the models they have already trained.
 
-Here are some default qualities of 3 tools:
-Tools | ChineseOCR_lite | PaddleOCR | KindaiOCR
-language| c++ | python | python
-speed | very fast | fast | slow
-reading direction | both | both | vertical
-recognition of language | 简体中文 | multiple languages | Japanese
+Here are some default qualities of 3 tools:. 
+
+
+| Tools | ChineseOCR_lite | PaddleOCR | KindaiOCR |
+
+| language | c++ | python | python |  
+| speed | very fast | fast | slow |  
+| reading direction | both | both | vertical |  
+| recognition of language | 简体中文 | multiple languages | Japanese |
 
 
 ## Difficulty in processing Republican magazines
