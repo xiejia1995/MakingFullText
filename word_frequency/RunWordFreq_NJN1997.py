@@ -14,7 +14,7 @@ def createWordCloud(text):
 def main():
     path = os.getcwd()
     txtpath = os.path.join(path,"word_frequency/NJN1997.txt")
-    file = open(txtpath,"r",encoding="utf-8")
+    file = open(txtpath,"r")
     text=file.read()
     file.close()
 
