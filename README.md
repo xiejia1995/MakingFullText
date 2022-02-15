@@ -11,13 +11,14 @@ This project aims at helping humanities scholars to produce and share our own fu
 
 2. Process the images of the documents into a clearly visible form.
 
-3. Choose proper OCR tools to detect and recognize texts, and save them into txt format.
+3. Choose proper [OCR tools](#ot) to detect and recognize texts, and save them into txt format.
 
 4. Based on the txt data, we can do a [distant reading](#dr) by means of computer.
 
 ## Republican materials
 The workflow for Republican materials is on the way. A test of OCR tools recognizing Republican sample can be seen [here](./docs/OCR_test_Republican_Magazine.md).
 
+<a name="ot"></a>
 ## OCR tools
 For academic use, we should avoid relying too much on commercial ones, but to choose open-source tools. Currently, the prevalent Chinese OCR projects are [ChineseOCR_Lite](https://github.com/DayBreak-u/chineseocr_lite), [ChineseOCR](https://github.com/chineseocr/chineseocr), and [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
 
