@@ -41,7 +41,7 @@ An excellent OCR tool for periodicals should do well in two functions:
 
 Let's start with a simplest word frequency test!
 
-This is an example of how we check the words appear most times in Nongjianübaishitong (农家女百事通) 1997.
+This is an example of how we check the words appear most times in Nongjianübaishitong (农家女百事通) 1997 (page 1- 120).
 
 To prepare, we should install a [python](https://www.python.org/) 3.x (e.g. 3.8), and run
 ```shell
