@@ -66,12 +66,12 @@ def CompXY(XYtxt):
     return txtcontent
 
 
-for i in range (1,120):
-    txtpath='./1997/'+ str(i) +'.png-result.txt'
+for i in range (0,407):
+    txtpath=r'C:\Users\cu183\Desktop\Shimin\OcrLiteOnnx-1.6.1\images\INPUT/'+ str(i) +'.png-result.txt'
     XYtxt=extracttxt(txtpath)
     txtcontent=CompXY(XYtxt)
-    filename='./1997txt/organized'+ str(i) +'.txt'
-    file = open(filename, "w")
+    filename=r'C:\Users\cu183\Documents\GitHub\MakingFullText\data\Nongjianv_Baishitong\1993/'+ str(i) +'.txt'
+    file = open(filename, "w", encoding='UTF-8')
     file.write(txtcontent)
 
 

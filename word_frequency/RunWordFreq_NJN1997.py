@@ -11,12 +11,12 @@ def createWordCloud(text):
     w=wordcloud.WordCloud(font_path="C:/Windows/Fonts/simhei.ttf",width=600,height=400,background_color="white")
     w.generate(text)  
     #this is the filename of the wordcloud picture
-    w.to_file('wordcloudNJN1997.jpg')
+    w.to_file('wordcloudNJN1993.jpg')
 
 def main():
     path = os.getcwd() #to get the path where this python script is
-    txtpath = os.path.join(path,"NJN1997.txt") #to include the txt filename into the text path
-    file = open(txtpath,"r") #open the text file
+    txtpath = os.path.join(path,"NJN1993.txt") #to include the txt filename into the text path
+    file = open(txtpath,"r", encoding='UTF-8') #open the text file
     text=file.read()
     file.close()
 
