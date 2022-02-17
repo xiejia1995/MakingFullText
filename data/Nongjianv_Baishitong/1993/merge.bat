@@ -1,1 +1,1 @@
-type *.txt>>all.txt
+type *.txt>> ../all.txt
