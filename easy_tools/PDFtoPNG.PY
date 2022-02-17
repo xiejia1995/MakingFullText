@@ -25,4 +25,4 @@ def pdf_image(pdfPath,imgPath,zoom_x,zoom_y,rotation_angle):
         print (imgPath+str(pg)+"DONE")
     pdf.close()
    
-pdf_image(r"C:/Documents/NJN.pdf",r"C:/Documents/NJN.pdf",5,5,0)
+pdf_image(r"C:\Users\cu183\Desktop\Shimin\primary sources\nongjianv 1993/1993all.pdf",r"C:\Users\cu183\Desktop\Shimin\primary sources\1993png/",5,5,0)
