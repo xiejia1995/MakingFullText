@@ -14,9 +14,9 @@ def Chuli(InputPath, OutputPath):
     img.save(OutputPath)
     return img
     
-for i in range(0,407):
+for i in range(407,505):
     i=str(i)
-    InputPath=r'C:\Users\cu183\Desktop\Shimin\primary sources\1993png/'+ i +'.png'
-    OutputPath=r'C:\Users\cu183\Desktop\Shimin\primary sources\1993pngBW/' + i +'.png'
+    InputPath=r'C:\Users\cu183\Desktop\Shimin\primary sources\1997png/'+ i +'.png'
+    OutputPath=r'C:\Users\cu183\Desktop\Shimin\primary sources\1997BW/' + i +'.png'
     Chuli(InputPath,OutputPath)
     print ("图片"+i+"黑白版保存成功")
