@@ -21,8 +21,8 @@ def pdf_image(pdfPath,imgPath,zoom_x,zoom_y,rotation_angle):
         trans = fitz.Matrix(zoom_x, zoom_y).prerotate(rotation_angle)
         pm = page.get_pixmap(matrix=trans, alpha=False)
         # 开始写图像
-        pm.save(imgPath+str(pg)+".png")
+        pm.save(imgPath+str(pg+253)+".png")
         print (imgPath+str(pg)+"DONE")
     pdf.close()
    
-pdf_image(r"C:\Users\cu183\Desktop\Shimin\primary sources\nongjianv 1993/1993all.pdf",r"C:\Users\cu183\Desktop\Shimin\primary sources\1993png/",5,5,0)
+pdf_image(r"C:\Users\cu183\Desktop\Shimin\primary sources\农家女1997/Multipage_2021-12-23_161446.pdf",r"C:\Users\cu183\Desktop\Shimin\primary sources\1997png/",5,5,0)
